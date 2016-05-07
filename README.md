@@ -15,7 +15,7 @@ Architecture is CloudWatch > Lambda > Twitter.
 
 ![Architecture is CloudWatch > Lambda > Twitter](https://cloud.githubusercontent.com/assets/11805940/15088395/e6d4447c-142d-11e6-812b-64dee3d60b17.png "CloudWatch > Lambda > Twitter")
 
-A entry for "[The Riot Games API Challenge 2016 (4/22 - 5/9)] (https://developer.riotgames.com/discussion/announcements/show/eoq3tZd1)" - "3. Creativity/Originality" category.
+An entry for "[The Riot Games API Challenge 2016 (4/22 - 5/9)] (https://developer.riotgames.com/discussion/announcements/show/eoq3tZd1)" - "3. Creativity/Originality" category.
 
 The name "LoLChama" came from LoL Champion Mastery.
 
