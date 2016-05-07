@@ -4,7 +4,8 @@ A tweitter bot to tweet your top 3 champion masteries of League of Legends (LoL)
 ## Demo
 [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
 
-![image](https://cloud.githubusercontent.com/assets/11805940/15087476/eb3e65b0-1423-11e6-86c4-64e2515666bd.png)
+![image](https://cloud.githubusercontent.com/assets/11805940/15088698/69c45b2a-1432-11e6-8013-721468e840d6.png)
+
 ## Description
 I created this to learn Amazon Web Service(AWS) and Riot API. And I wanted to create a software at no cost. So I uses AWS Lamda to create this. And I use CloudWatdh to run Lamda function periodically. Lamda and CloudWatdh have monthly free tier usage. It's enough to run a simple bot. 
 
@@ -19,23 +20,127 @@ A entry for "[The Riot Games API Challenge 2016 (4/22 - 5/9)] (https://developer
 The name "LoLChama" came from LoL Champion Mastery.
 
 ## Requirement
-1. [Riot API Key](https://developer.riotgames.com/)
-1. [AWS Account and IAM user for Lamda](https://docs.aws.amazon.com/lambda/latest/dg/setting-up.html)
 1. [Node.js v4.4.3 (npm 2.15.1)](https://nodejs.org/en/download/)
 2. [![async](https://nodei.co/npm/async.png?mini=true)](https://www.npmjs.com/package/async "async")
 3. [![twitter](https://nodei.co/npm/twitter.png?mini=true)](https://www.npmjs.com/package/twitter "twitter")
 4. [![riot-api-client](https://nodei.co/npm/riot-api-client.png?mini=true)](https://www.npmjs.com/package/riot-api-client "riot-api-client")
+5. [Summoner Name of League of Legends](https://signup.na.leagueoflegends.com)
+5. [Riot API Key](https://developer.riotgames.com/)
+6. [Twitter Consumer Key (API Key)](https://apps.twitter.com/)
+7. Twitter Consumer Secret (API Secret)
+8. Twitter Access Token
+9. Twitter Access Token Secret
+10. [AWS Account](https://docs.aws.amazon.com/lambda/latest/dg/setting-up.html)
+11. [AWS IAM user for Lamda](https://docs.aws.amazon.com/lambda/latest/dg/setting-up.html#setting-up-iam)
 
 ## Usage
+1. Download LoLChaMa source
+
+(Download folder example.) D:\ulg\Downloads\LoLChaMa-master
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089172/ec789c9c-1438-11e6-87df-a969bc419c66.png)
+
+2. Setting
+
+Unzip and open "autotweet.js".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089266/d118b8d6-143a-11e6-99b0-85c56c24d4be.png)
+
+Set summoner name and keys.
+ 
+ ![image](https://cloud.githubusercontent.com/assets/11805940/15089352/7784346a-143c-11e6-8e41-22c417dbbd6a.png)
+
+2. Install Node packages
+
+Open Command Prompt and Type these.
+
+Move to the download folder. (D:\ulg\Downloads\LoLChaMa-master)
+
+    d:
+    cd D:\ulg\Downloads\LoLChaMa-master
+
+Install Node packages.
+
+    npm install async
+    npm install twitter
+    npm install riot-api-client
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089490/1397e8a4-143f-11e6-8f14-b7a83d4c3555.png)
+
+3. Create a zip
+
+Select only "node_modules" and "autotweet.js".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089535/0e7de9d0-1440-11e6-8cda-e84fe9727dd6.png)
+
+And right click > send > zip.
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089539/20e9b2c0-1440-11e6-9164-d26a02268bfe.png)
+
+1. Create a Lambda function
+
+Go to [AWS Lambda](https://console.aws.amazon.com/lambda/) page.
+
+Click "Create  a Lambda function".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089561/9224b3b8-1440-11e6-9b6f-e377b66135d7.png)
+
+Click "Skip" at the bottom right.
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089652/fa00ce34-1442-11e6-9cd8-a9a63bb44ab4.png)
+
+Configure function.
+
+Name : LoLChaMa
+
+Description : Tweet LoL Champion Mastery Top 3
+
+Code entry type: Upload a .ZIP file
+
+Fanction package : autotweet.zip
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089615/f22c5cd8-1441-11e6-9e02-9f8a2105a42e.png)
+
+Handler : autotweet.handler
+
+Role : lambda_basic_execution
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089677/0c07618c-1444-11e6-9cba-c1e986f0e05d.png)
+
+Click "Allow".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089641/7d0abdb8-1442-11e6-8a2d-45f03c85b44b.png)
+
+Timeout : 0 min 10 sec
+
+Click "Next".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089649/c5df47e8-1442-11e6-9903-83444d531bf3.png)
+
+Clic "Create function".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089688/7a68cd5a-1444-11e6-900a-30d0f3a4ec2f.png)
+
+
+2. Test
+
+
+3. Add Event Source
+
+
+4. See [your timeline](https://twitter.com/) or [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15088698/69c45b2a-1432-11e6-8013-721468e840d6.png)
 
 ## Install
 
-## Contribution
-
 ## Licence
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+[MIT](http://choosealicense.com/licenses/mit/)
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+[ulg](https://twitter.com/ulg_)
+
+## Copyright
+(c) 2016. LoLChaMa isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
