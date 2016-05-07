@@ -100,7 +100,7 @@ exports.handler = function(event, context) {
       });
     },
     function tweetTopchampions(champMasteriyInfos, callback2) {
-      var data = ' \n <3<3<3 ' + champMasteriyInfos[0].championName
+      var data = ' <3<3<3 ' + champMasteriyInfos[0].championName
                  + ' (' + champMasteriyInfos[0].championPoints + ' Points)'
                + ' \n <3<3     ' + champMasteriyInfos[1].championName
                   + ' (' + champMasteriyInfos[1].championPoints + ' Points)'
