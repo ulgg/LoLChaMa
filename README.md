@@ -50,7 +50,7 @@ Set summoner name and keys.
  
  ![image](https://cloud.githubusercontent.com/assets/11805940/15089352/7784346a-143c-11e6-8e41-22c417dbbd6a.png)
 
-2. Install Node packages
+3. Install Node packages
 
 Open Command Prompt and Type these.
 
@@ -67,7 +67,7 @@ Install Node packages.
 
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089490/1397e8a4-143f-11e6-8f14-b7a83d4c3555.png)
 
-3. Create a zip
+4. Create a zip
 
 Select only "node_modules" and "autotweet.js".
 
@@ -77,7 +77,7 @@ And right click > send > zip.
 
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089539/20e9b2c0-1440-11e6-9164-d26a02268bfe.png)
 
-1. Create a Lambda function
+5. Create a Lambda function
 
 Go to [AWS Lambda](https://console.aws.amazon.com/lambda/) page.
 
@@ -117,22 +117,47 @@ Click "Next".
 
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089649/c5df47e8-1442-11e6-9903-83444d531bf3.png)
 
-Clic "Create function".
+Click "Create function".
 
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089688/7a68cd5a-1444-11e6-900a-30d0f3a4ec2f.png)
 
+6. Test
 
-2. Test
+Click "Test".
 
+![image](https://cloud.githubusercontent.com/assets/11805940/15089703/ec4b1d24-1444-11e6-9e44-9f6f8c319695.png)
 
-3. Add Event Source
+Click "Save and test".
 
+![image](https://cloud.githubusercontent.com/assets/11805940/15089718/3d2e2e48-1445-11e6-9f1f-1206281fb9da.png)
 
-4. See [your timeline](https://twitter.com/) or [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
+Check Execution result: succeeded "done".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089839/82464c9c-1448-11e6-923b-0bcf41c0dec5.png)
+
+7. Add event source
+
+Click "Event sources" tag and click "Add event source"
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089788/04bd51c2-1447-11e6-83d4-c89ddc1f9d5a.png)
+
+Event source type : CloudWatch Event - Schedule
+
+Rule name : LoLChaMa
+
+Schedule expression : cron(0 6 ? * * *)
+
+ * Tweet at 6:00 am.
+
+Click "Submit".
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089804/ae270ffa-1447-11e6-8113-00cffd34e037.png)
+
+![image](https://cloud.githubusercontent.com/assets/11805940/15089829/5b9e8d3e-1448-11e6-86d6-5e1fe3fefcb9.png)
+
+8. See [your timeline](https://twitter.com/) or [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
 
 ![image](https://cloud.githubusercontent.com/assets/11805940/15088698/69c45b2a-1432-11e6-8013-721468e840d6.png)
-
-## Install
 
 ## Licence
 
