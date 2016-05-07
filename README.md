@@ -42,10 +42,10 @@ The name "LoLChama" came from LoL Champion Mastery.
 ### 2. Setting
 
 Unzip and open "autotweet.js".  
-Tips : You need to save the file as UTF-8 encode.   
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089266/d118b8d6-143a-11e6-99b0-85c56c24d4be.png)
 
 Set summoner name and keys.  
+Tips : You need to save the file as UTF-8 encode.   
  ![image](https://cloud.githubusercontent.com/assets/11805940/15089352/7784346a-143c-11e6-8e41-22c417dbbd6a.png)
 
 ### 3. Install Node packages
