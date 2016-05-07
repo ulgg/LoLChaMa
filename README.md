@@ -1,5 +1,5 @@
 #LoLChaMa
-A twitter bot to tweet your top 3 champion masteries of League of Legends (LoL) on your timeline periodically.
+A twitter bot to tweet a summoner's top 3 champion masteries of League of Legends (LoL) on your timeline periodically.
 
 ## Demo
 [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
