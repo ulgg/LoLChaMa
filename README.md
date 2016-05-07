@@ -111,7 +111,8 @@ Click "Save and test".
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089718/3d2e2e48-1445-11e6-9f1f-1206281fb9da.png)
 
 Check Execution result: succeeded "done".  
-Tips : You can't tweet "same message" at short times.  
+Tips1 : You can't tweet "same message" at short times.  
+Tips2 : You can tweet a hidden tweet as using "@home " at the beginning of tweet.  
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089839/82464c9c-1448-11e6-923b-0bcf41c0dec5.png)
 
 ### 7. Add event source
