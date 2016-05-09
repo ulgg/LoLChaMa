@@ -122,7 +122,7 @@ Click "Event sources" tag and click "Add event source"
 
 Event source type : CloudWatch Event - Schedule  
 Rule name : LoLChaMa  
-Schedule expression : cron(0 6 ? * * *)  
+Schedule expression : cron(0 6 * * ? *)  
 exp.) Run at 6:00 am (UTC).  
 Click "Submit".  
 ![image](https://cloud.githubusercontent.com/assets/11805940/15089804/ae270ffa-1447-11e6-8113-00cffd34e037.png)
