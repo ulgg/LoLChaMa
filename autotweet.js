@@ -100,13 +100,13 @@ exports.handler = function(event, context) {
       });
     },
     function tweetTopchampions(champMasteriyInfos, callback2) {
-      var data = ' <3<3<3 ' + champMasteriyInfos[0].championName
+      var data = '<3<3<3 ' + champMasteriyInfos[0].championName
                  + ' (' + champMasteriyInfos[0].championPoints + ' Points)'
-               + ' \n <3<3     ' + champMasteriyInfos[1].championName
+               + ' \n<3<3     ' + champMasteriyInfos[1].championName
                   + ' (' + champMasteriyInfos[1].championPoints + ' Points)'
-               + ' \n <3         ' + champMasteriyInfos[2].championName
+               + ' \n<3         ' + champMasteriyInfos[2].championName
                  + ' (' + champMasteriyInfos[2].championPoints + ' Points)'
-               + ' \n #LoLChaMa';
+               + ' \n#LoLChaMa';
       var params = {status: data};
       client.post('statuses/update', params, function(error, tweet, response){
         if(error) return context.fail('failed : ' + error);
