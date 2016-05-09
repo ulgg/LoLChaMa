@@ -123,7 +123,7 @@ Click "Event sources" tag and click "Add event source"
 Event source type : CloudWatch Event - Schedule  
 Rule name : LoLChaMa  
 Schedule expression : cron(0 6 * * ? *)  
-exp.) Run at 6:00 am (UTC).  
+exp.) Run every 6:00 am (UTC). [Schedule Expression Syntax for Rules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ScheduledEvents.html)  
 Click "Submit".  
 ![image](https://cloud.githubusercontent.com/assets/11805940/15104505/59e7e5a0-15f4-11e6-9271-fa3e2f3db700.png)
 ![image](https://cloud.githubusercontent.com/assets/11805940/15104535/b3b55630-15f4-11e6-8008-f273c6175796.png)
