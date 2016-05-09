@@ -125,8 +125,8 @@ Rule name : LoLChaMa
 Schedule expression : cron(0 6 * * ? *)  
 exp.) Run at 6:00 am (UTC).  
 Click "Submit".  
-![image](https://cloud.githubusercontent.com/assets/11805940/15089804/ae270ffa-1447-11e6-8113-00cffd34e037.png)
-![image](https://cloud.githubusercontent.com/assets/11805940/15089829/5b9e8d3e-1448-11e6-86d6-5e1fe3fefcb9.png)
+![image](https://cloud.githubusercontent.com/assets/11805940/15104505/59e7e5a0-15f4-11e6-9271-fa3e2f3db700.png)
+![image](https://cloud.githubusercontent.com/assets/11805940/15104535/b3b55630-15f4-11e6-8008-f273c6175796.png)
 
 ### 8. See [your timeline](https://twitter.com/) or [#LoLChaMa](https://twitter.com/hashtag/LoLChaMa?f=tweets&vertical=default&src=hash)
 
